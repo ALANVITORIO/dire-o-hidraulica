@@ -1,0 +1,347 @@
+body {
+  background-color: #000214;
+}
+/* Estilos padrão para p e h1 */
+p {
+  font-family: 'PT Mono', 'Courier New', monospace;
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-decoration: dashed;
+  text-shadow: #fff;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  stroke: #000214;
+}
+
+/* Consulta de mídia para dispositivos móveis */
+@media (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Estilo aplicado somente para telas menores que 768px, comum para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  br {
+    display: none;
+  }
+}
+
+.content-section {
+  background-image: url('HERO.webp'); /* Caminho para sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    background-image: url('hero-mobile.png');
+    padding-top: 440px;
+  }
+}
+
+.bg2 {
+  background-image: url('micheal3.webp'); /* Caminho para sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; /* Ajuste o padding conforme necessário */
+}
+@media (max-width: 768px) {
+  .bg2 {
+    background-image: url('michaelresp.webp');
+    padding-top: 440px;
+  }
+}
+
+.toby-section {
+  background-image: url('TOBY.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .toby-section {
+    background-image: url('tobyresp.webp');
+    padding-top: 400px;
+  }
+}
+
+.secao-ensino {
+  background-image: url('michael.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .secao-ensino {
+    background-image: url('ensina-mobile.webp');
+    padding-top: 350px;
+  }
+}
+
+.secao-citacao {
+  background-image: url('cita.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.secao-michael-scott {
+  background-image: url('michael4.webp'); /* Imagem padrão para desktop */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .secao-michael-scott {
+    background-image: url('quem-mobile.webp');
+    padding-top: 250px;
+  }
+}
+
+@keyframes soundWaveEffect {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.custom-button {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
+  position: relative; /* Posição relativa para pseudo-elementos e ícones */
+  overflow: hidden; /* Garante que pseudo-elementos não saiam do botão */
+  background: linear-gradient(
+    45deg,
+    #0056b3,
+    #0099cc,
+    #0056b3
+  ); /* Gradiente de azul */
+  background-size: 200% 200%; /* Tamanho do background ajustado para a animação */
+  animation: soundWaveEffect 4s infinite linear; /* Adiciona o efeito de onda */
+}
+
+.custom-button:hover,
+.custom-button:focus {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra maior para hover */
+  transform: translateY(-3px); /* Eleva o botão */
+}
+
+.custom-button:active {
+  transform: translateY(-1px); /* Efeito de pressionar */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra menor para pressionar */
+}
+
+.custom-button i {
+  margin-right: 0.5rem; /* Espaçamento para o ícone */
+}
+
+.destaque {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(45deg, #9aa8e6, #0088cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+ul.list-unstyled {
+  list-style-type: none;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 0.5rem; /* Espaçamento entre os itens da lista */
+}
+
+ul.list-unstyled li i {
+  margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+ul li {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+/* Estilos CSS para a lista dentro da seção .bg2 */
+.bg2 .list-unstyled {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.bg2 .list-unstyled li {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.bg2 .list-unstyled li i {
+  margin-right: 0.5rem;
+}
+
+/* Consulta de mídia para telas pequenas (dispositivos móveis) */
+@media (max-width: 768px) {
+  .bg2 .list-unstyled {
+    padding-left: 0;
+    list-style-type: none;
+  }
+}
+
+ol li {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.separador {
+  height: 10px;
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  filter: blur(20px);
+  padding-top: 5px;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Para garantir que o conteúdo fique acima da imagem de fundo */
+.content-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.alinha-esquerda {
+  text-align: left;
+}
+
+.testimonials {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials::before,
+.testimonials::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #3e79cb;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+}
+
+.testimonials::before {
+  top: -100px;
+  left: -100px;
+  animation: rotateBall1 5s linear infinite;
+}
+
+.testimonials::after {
+  top: -150px;
+  left: -150px;
+  animation: rotateBall2 6s linear infinite;
+}
+
+@keyframes rotateBall1 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+  25% {
+    transform: translate(50vw, 40vh) rotate(90deg);
+  }
+  50% {
+    transform: translate(-20vw, 80vh) rotate(180deg);
+  }
+  75% {
+    transform: translate(30vw, -20vh) rotate(270deg);
+  }
+}
+
+@keyframes rotateBall2 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    transform: translate(-30vw, 50vh) rotate(120deg);
+  }
+  40% {
+    transform: translate(40vw, -30vh) rotate(240deg);
+  }
+  60% {
+    transform: translate(-50vw, 20vh) rotate(300deg);
+  }
+  80% {
+    transform: translate(20vw, -40vh) rotate(360deg);
+  }
+}
+.bonus-box {
+  border: 2px solid #0099cc; /* Linha azul */
+  padding: 15px; /* Espaçamento interno reduzido */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 0px 20px #0099cc; /* Efeito de brilho/blur */
+  margin: 20px; /* Espaçamento entre os boxes */
+  /* Diminuir a largura total do box */
+  max-width: 250px; /* Você pode ajustar isso conforme necessário */
+}
+
+.titulo-brilhante {
+  color: #0099cc; /* Cor do texto */
+  text-shadow: 0 0 10px #0099cc, 0 0 20px #0099cc, 0 0 30px #0099cc,
+    0 0 40px #0099cc; /* Efeito de brilho */
+}
+@keyframes piscarBrilho {
+  0%,
+  100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px #0099cc, 0 0 20px #0099cc, 0 0 30px #0099cc,
+      0 0 40px #0099cc;
+  }
+}
+
+.titulo-brilhante {
+  color: #0099cc; /* Cor do texto */
+  animation: piscarBrilho 4.5s infinite alternate; /* Efeito de piscar */
+}
+
+.marcador {
+  border-top: 4px solid #0099cc; /* Linha azul sólida na parte superior */
+  width: 45px;
+  margin: 10px auto; /* Centraliza o marcador */
+  box-shadow: 0 0 10px #0099cc, 0 0 20px #0099cc, 0 0 30px #0099cc,
+    0 0 40px #0099cc; /* Efeito de brilho */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* MOBILE */
